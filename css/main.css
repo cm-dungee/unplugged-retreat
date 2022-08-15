@@ -355,14 +355,15 @@ aside {
 		margin: 100px 0;
 	}
 	header {
-		justify-content: center;
+		justify-content: space-around;
+		padding: 33px 0;
     }
     header .content-wrapper {
-        width: 768px;
+        width: 100%;
 		justify-content: space-between;
     }
     header nav {
-        width: 125px;
+        width: 20%;
     }
     header nav ul {
 		justify-content: between;
@@ -378,7 +379,7 @@ aside {
     }
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {        
-        width: 300px;        
+        width: 40%;        
         margin: 0;
     }
 	.features article {
@@ -389,21 +390,21 @@ aside {
 		flex-basis: 50%;
     }
     .features .features-item-description {
-        width: 200px;
+        width: 50%;
     }
  
     /* Reviews */
     .reviews article {
 		display: flex;
-		jsutify-content: center;
+		jsutify-content: space-between;
     }
     .reviews article div {
-        width: 635px;         
+        width: 49%;         
     }
  
     /* Footer */
     footer .content-wrapper {
-        width: 490px;
+        width: 65%;
         margin: 100px 0;
     }
     .footer-content {
@@ -415,13 +416,30 @@ aside {
         margin-bottom: 0;
     }
     footer .copyright {
-        width: 188px;
+        width: 100%;
+    }
+	.mission-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px
+    }
+    .mission-content p {
+      width: 45%;
+    }
+    .contact-section .content-wrapper h2 {
+      width: 80%;
+    }
+    .contact-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
     }
 	.faq .content-wrapper {
         justify-content: space-between;
     }
     .faq-content {
-        flex-basis: 40%;
+        flex-basis: 45%;
     }
     .faq h2 {
         width: 100%;
