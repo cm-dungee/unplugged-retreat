@@ -440,7 +440,7 @@ aside {
          max-width: 960px;
     }
 	.hero-area h1 {
-		width: 45%;
+		width: 60%;
     }
 	aside .content-wrapper {
 		justify-content: space-around;
@@ -450,17 +450,17 @@ aside {
         width: 30%;
     }
 	.features h2 {
-        width: 55%;
+        width: 90%;
     }
 	.features article {
-        flex-basis: 26%;
+        flex-basis: 33%;
     }
 	.reviews article div {
-        width: 35%;
+        width: 42%;
     }
 	.mission h2,
     .contact-section .content-wrapper h2 {
-        width: 60%;
+        width: 90%;
     }
 	.faq h2 {
         width: 100%;
