@@ -235,7 +235,7 @@ aside {
 	flex-flow: row wrap;
 }
 .faq-content {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 .faq .content-wrapper {
 	margin: 50px 0 0 0;
@@ -245,7 +245,7 @@ aside {
 	flex-flow: row wrap;
 }
 .faq h2 {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 
@@ -337,20 +337,95 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+/* @media only screen and (min-width: 35em) { */
   /* Style adjustments for viewports that meet the condition */
-}
+/* } */
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+/* @media print, */
+  /* (-webkit-min-device-pixel-ratio: 1.25), */
+  /* (min-resolution: 1.25dppx), */
+  /* (min-resolution: 120dpi) { */
   /* Style adjustments for high resolution devices */
-}
+/* } */
 
 @media only screen and (min-width: 768px) {
 /*Tablet styles here*/
-	/* width: 70%; */
+	.content-wrapper {
+		max-width: 640px;
+		margin: 100px 0;
+	}
+	header {
+		justify-content: center;
+    }
+    header .content-wrapper {
+        width: 768px;
+		justify-content: space-between;
+    }
+    header nav {
+        width: 125px;
+    }
+    header nav ul {
+		justify-content: between;
+    }
+    .header-divider {
+        display: none;
+    }
+	aside .content-wrapper {
+        margin: 50px 0;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+    }
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {        
+        width: 300px;        
+        margin: 0;
+    }
+	.features article {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+		flex-basis: 50%;
+    }
+    .features .features-item-description {
+        width: 200px;
+    }
+ 
+    /* Reviews */
+    .reviews article {
+		display: flex;
+		jsutify-content: center;
+    }
+    .reviews article div {
+        width: 635px;         
+    }
+ 
+    /* Footer */
+    footer .content-wrapper {
+        width: 490px;
+        margin: 100px 0;
+    }
+    .footer-content {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+    }
+    footer .contact {
+        margin-bottom: 0;
+    }
+    footer .copyright {
+        width: 188px;
+    }
+	.faq .content-wrapper {
+        justify-content: space-between;
+    }
+    .faq-content {
+        flex-basis: 40%;
+    }
+    .faq h2 {
+        width: 100%;
+    }
 }
  
 @media only screen and (min-width: 1200px) {
