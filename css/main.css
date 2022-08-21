@@ -209,46 +209,75 @@ header nav ul {
 	font-weight: 600;
 }
 
-footer { 
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+footer {
+	width: 100%;
 	background-color: #202322;
-} 
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
 
 footer .content-wrapper {
 	width: 100%;
-	margin-top: 30px;
+	display: flex;
+	justify-content: center;
 }
 
-footer h4 {
-	margin-bottom: 15px;
+footer .footer-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 30px;
 }
 
 footer .contact {
-	margin-bottom: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+footer .contact h4 {
+	width: 60%;
+	margin: 24px 0 12px;
+}
+
+footer address {
+	width: 60%;
 }
 
 footer .social {
-	margin-bottom: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+footer .social h4 {
+	width: 55%;
+	margin: 24px 0 15px;
 }
 
 footer .social-icons {
+	width: 46%;
 	display: flex;
-	justify-content: space-around;
-    align-items: center;
+	justify-content: space-between;
+	margin: 0 0 10px;
+}
+
+footer .social-icons p {
+	width: 20px;
+	background-color: #527158;
+	padding: 10px;
+	border-radius: 50px;
 }
 
 footer .copyright {
-	margin-bottom: 15px;
-	word-spacing: 2px;
-	
+	text-align: center;
 }
 
-footer p {
+footer .copyright p {
 	margin: 0;
 }
-
 
 /*-------------------- Mobile Styles - Homepage --------------------*/
 
@@ -649,31 +678,29 @@ input[type=button] {
     }
 	
 	footer .content-wrapper {
-		margin: 70px 70px 0;
-	}
-	
-	.content-wrapper .footer-content {
+		max-width: 100%;
 		display: flex;
 		justify-content: center;
-		align-content: space-between;
-		flex-wrap: wrap;
+		margin: 30px 0 0;
 	}
 
-	.content-wrapper .footer-content div {
+	footer .footer-content {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	
+	footer .contact, .social {
 		width: 50%;
 	}
 	
-	footer h4 {
-		font-size: 1.5em;
-	}
-	
-	.copyright {
-		margin-top: 40px;
+	footer .copyright p {
+		margin: 50px 0 0;
 	}
 	
 /*Home Page*/
-	
-	
 	.hero-area h1 {
 		font-size: 3em;
 		line-height: 48px;
@@ -777,13 +804,13 @@ input[type=button] {
 	}
 	
 	.map figure {
-    width: 100%;
-    height: 0; 
-    padding-bottom: 45%; 
-    overflow: hidden;
-    position: relative;
-	margin: 0;
-}
+		width: 100%;
+		height: 0; 
+		padding-bottom: 45%; 
+		overflow: hidden;
+		position: relative;
+		margin: 0;
+	}
 	
 	.contact-section .content-wrapper {
 		margin: 90px 0;
@@ -848,26 +875,14 @@ input[type=button] {
 	header nav {
 		width: 15%;
 	}
-	
-	footer {
-		padding-top: 50px;
-	}
-	
+		
 	footer .content-wrapper {
-		max-width: 100%;
-		margin: 0;
+		max-width: 100%
 	}
 	
-	footer-content {
-		margin: 50px 0 0;
-	}
-	
-	footer h4 {
-		font-size: 1.9em;
-	}
-	
-	footer p {
-		font-size: 1.13em;
+	footer .social-icons {
+		display: flex;
+		justify-content: space-evenly;
 	}
 	
 /*Home Page*/
@@ -1003,15 +1018,8 @@ input[type=button] {
 	}
 	
 	.faq h4, p {
-		font-size: 1.13em;
+		font-size: 1.13em
 	}
-
-
-	
-	 
-	
-	
-	
 }
 
 
